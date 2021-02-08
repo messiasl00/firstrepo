@@ -1,6 +1,6 @@
 ## Primeiro Repositório Git 
 
-## Aprendendo comando básicos do Git
+## Aprendendo Comandos Básicos do Git
 
 git --version : Para verificar a versão do Git
 
@@ -28,3 +28,13 @@ git reset HEAD README.md : Retira as mudanças adicionadas pelo "git add -all" d
 git reset --soft HEAD~1 : Desfaz o commit 
 
 git reset --hard HEAD~1 : Opção mais agressiva para desfazer todas as alterações do último commit
+
+## Gerenciando Repositórios Remotos
+
+ssh-keygen : Gerar a chave SSH 
+
+cat ~/.ssh/id_rsa.pub : Visualizar o hash de sua chave SSH 
+
+git remote add origin git@github.com:messiassilva/firstrepo.git : Informar para o Git qual será o nosso repositório remoto no GitHub
+
+git push origin master : Enviar o commit para nosso repositório remoto  
