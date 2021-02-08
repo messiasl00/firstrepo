@@ -1,6 +1,6 @@
-Primeiro Repositório Git 
+## Primeiro Repositório Git 
 
-Aprendendo comando básicos do Git
+## Aprendendo comando básicos do Git
 
 git --version : Para verificar a versão do Git
 
@@ -20,3 +20,11 @@ git commit -m "Criando o Readme" : Realizando o commit. Obs.: Para realizar um c
 git log : Ver o histórico de versões do seu repositório
 
 git log -p : Mostra o conteúdo que foi feito o commit e com mais detalhes também
+
+git checkout -- README.md : Desfaz a mudança antes de adicioná-la ao próximo commit
+
+git reset HEAD README.md : Retira as mudanças adicionadas pelo "git add -all" do próximo commit. Ai sim, você poderá usar desfazer as alterações no arquivo com o checkout
+
+git reset --soft HEAD~1 : Desfaz o commit 
+
+git reset --hard HEAD~1 : Opção mais agressiva para desfazer todas as alterações do último commit
